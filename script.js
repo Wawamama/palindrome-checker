@@ -24,13 +24,10 @@ document.getElementById('form').addEventListener("submit", function(e) {
     e.preventDefault();
     const word = document.getElementById('palindrome').value;
     if (checkPalindrome(word)) {
-        result.textContent = "YattaY! Palindrome!"
+        result.textContent = "Yay! C'est un Palindrome!"
     } else {
         result.textContent = 'Nope. Pas palindrome.'
     }
 
 });
 
-
-
-//button.onclick = checkPalindrome(word);
