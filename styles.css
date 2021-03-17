@@ -6,6 +6,8 @@
 body {
     background-color: darkslateblue;
     color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
 
 }
 
@@ -16,14 +18,82 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    
 }
 
 form {
     width: 80vw;
+    max-width: 600px;
     height: 30vh;
+    text-align: center;
+    border: solid 1px rgb(124, 112, 201);
+    border-radius: 25px;
+    box-shadow: 1px 1px 20px 1px hsla(241, 65%, 90%, 0.06);
+    padding-top: 5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
     text-align: center;
 }
 
-p {
+
+
+input[type='text'] {
+    width: 70%;
+    height: 35px;
+    padding: 5px 5px;
+    border-radius: 2px;
+    border: solid 1px rgb(196, 196, 196);
+    outline: none;
+    box-sizing: border-box;
+}
+
+input[type='text']:focus {
+    background-color: rgb(209, 209, 241);
+    border: solid 1px #9424d5;
+    transition: background-color 0.5s;
+}
+
+input[type='submit'] {
+    padding: 5px;
+    background-color: #9424d5;
+    border-radius: 2px;
+    outline: none;
+    border:solid 0.2px #9424d5;
+    color: white;
+    width: 70%;
+    height: 35px;;
+    cursor: pointer;
+    text-decoration: none;
+    
+}
+
+input[type='submit']:hover {
+    background: linear-gradient(180deg, rgba(171,57,237,1) 0%, rgba(159,121,191,0.7945553221288515) 100%);
+    transition: background 3s ease-in-out;
+}
+/* Placeholders */
+::-webkit-input-placeholder { opacity: 1; -webkit-transition: opacity .5s; transition: opacity .5s; }  /* Chrome 56, Safari 9 */
+:-moz-placeholder { opacity: 1; -moz-transition: opacity .5s; transition: opacity .5s; } /* FF 4-18 */
+::-moz-placeholder { opacity: 1; -moz-transition: opacity .5s; transition: opacity .5s; } /* FF 19-51 */
+:-ms-input-placeholder { opacity: 1; -ms-transition: opacity .5s; transition: opacity .5s; } /* IE 10+ */
+::placeholder { opacity: 1; transition: opacity .5s; }
+/* Focus */
+*:focus::-webkit-input-placeholder { opacity: 0; } /* Chrome 56, Safari 9 */
+*:focus:-moz-placeholder { opacity: 0; } /* FF 4-18 */
+*:focus::-moz-placeholder { opacity: 0; } /* FF 19-50 */
+*:focus:-ms-input-placeholder { opacity: 0; } /* IE 10+ */
+*:focus::placeholder { opacity: 0; } 
+
+#result {
     text-align: start;
+    color: white;
+    margin-top: 30px;
+    font-size: 1.5em;
 }
